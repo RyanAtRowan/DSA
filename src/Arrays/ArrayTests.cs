@@ -9,10 +9,10 @@ namespace DSA.Arrays
         public void Insert_ShouldAddElementAtSpecifiedIndex()
         {
             // Arrange
-            var array = new Arrays(5);
+            var array = new Array(5);
 
             // Act
-            array.Insert(0.10);
+            array.Insert(0, 10);
 
             // Assert
             Assert.Equal(10, array.Get(0));
@@ -22,7 +22,7 @@ namespace DSA.Arrays
         public void Get_ShouldReturnElementAtSpecifiedIndex()
         {
             // Arrange
-            var array = new Arrays(5);
+            var array = new Array(5);
             array.Insert(0, 10);
 
             // Act
@@ -36,7 +36,7 @@ namespace DSA.Arrays
         public void Size_ShouldReturnCorrectNumberOfElements()
         {
             // Arrange
-            var array = new Arrays(5);
+            var array = new Array(5);
             array.Insert(0, 10);
             array.Insert(1, 20);
 
